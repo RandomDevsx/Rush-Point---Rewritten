@@ -234,7 +234,7 @@ do
 
      if Mobile == true then
      MasterContainer.Active = true
-     MasterContainer.draggable = true
+     MasterContainer.Draggable = true
      end
 
         --// External click "signal" -> Used for dropdowns to detect if someone clicks outside of the dropdown -> close dropdown
