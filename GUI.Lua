@@ -91,7 +91,7 @@ local theme = getgenv().theme or {
 --//Library
 do
     function library.init(title, version, id, position, size)
-        local position = position or workspace.CurrentCamera.ViewportSize/2
+        local position = position or UDim2.new(0, workspace.CurrentCamera.ViewportSize.X / 2, 0, workspace.CurrentCamera.ViewportSize.Y / 2)
         local size = size or UDim2.new(0, 540, 0, 315)
 
         local ScreenGui,MasterContainer = util.new("ScreenGui", { Parent = game:GetService("CoreGui"), Name=id }, {
